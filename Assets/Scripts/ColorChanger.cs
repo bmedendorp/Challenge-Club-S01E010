@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class ColorChanger : MonoBehaviour
 {
-    public enum SpriteColor {red, blue, yellow};
+    public enum SpriteColor {red, blue, yellow, purple, orange, green};
 
     [SerializeField] private SpriteColor spriteColor = SpriteColor.red;
 
@@ -36,6 +36,15 @@ public class ColorChanger : MonoBehaviour
                 break;
             case SpriteColor.yellow:
                 color = Color.yellow;
+                break;
+            case SpriteColor.purple:
+                color = new Color(1f, 0f, 1f);
+                break;
+            case SpriteColor.orange:
+                color = new Color(1f, 0.33f, 0f);
+                break;
+            case SpriteColor.green:
+                color = Color.green;
                 break;
         }
 
